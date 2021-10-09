@@ -1,0 +1,8 @@
+<h2>Hello world</h2>
+<pre>
+  {{form.value | json}}
+</pre>
+<form [formGroup]="form">
+  <app-input [parentForm]="form" name="name"></app-input>
+  <app-input [parentForm]="form" name="lastname"></app-input>
+</form>
